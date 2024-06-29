@@ -7,7 +7,7 @@ function onClickedEstimatePrice() {
     var location = document.getElementById("uiLocations").value;
     var estPrice = document.getElementById("uiEstimatedPrice");
 
-    var url = "https://thanalakshan.github.io/api/predict_home_price";
+    var url = "http://127.0.0.1:5000/predict_home_price";
 
     // Construct query parameters for GET request
     var queryParams = `?total_sqft=${encodeURIComponent(sqft)}&bhk=${encodeURIComponent(bhk)}&bath=${encodeURIComponent(bathrooms)}&location=${encodeURIComponent(location)}`;
